@@ -7,16 +7,15 @@
 //
 
 import XCTest
-import jrIoT
+@testable import jrIoT
 
-class IoTitem: XCTestCase {
+class IoTitemTest: XCTestCase {
     //-----------------------------------------------------------------------------------------------------
     func testIoTitem() {
     
-        _ = IoTitem()
-        _ = IoTitem("10.0.0.25")
+        _ = IoTitem(ip: "10.0.0.25")
         
-        _ = MyClass("rrrr")
+
         
     }
     //--------------------------------------------------------------------------------------------------------

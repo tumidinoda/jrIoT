@@ -9,8 +9,11 @@
 import Foundation
 
 class IoTitem {
+    let ip: String
     init (ip: String) {
+        self.ip=ip
         
     }
 }
+
 
