@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1A5A6D71FEC3B7000C67798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A5A6D61FEC3B7000C67798 /* AppDelegate.swift */; };
+		E1A5A6D91FEC3B7000C67798 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A5A6D81FEC3B7000C67798 /* ViewController.swift */; };
+		E1A5A6DC1FEC3B7000C67798 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A5A6DA1FEC3B7000C67798 /* Main.storyboard */; };
+		E1A5A6DF1FEC3B7000C67798 /* jrIoT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1A5A6DD1FEC3B7000C67798 /* jrIoT.xcdatamodeld */; };
+		E1A5A6E11FEC3B7000C67798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A5A6E01FEC3B7000C67798 /* Assets.xcassets */; };
+		E1A5A6E41FEC3B7000C67798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A5A6E21FEC3B7000C67798 /* LaunchScreen.storyboard */; };
+		E1A5A6EF1FEC3B7000C67798 /* jrIoTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A5A6EE1FEC3B7000C67798 /* jrIoTTests.swift */; };
+		E1A5A6FA1FEC3B7000C67798 /* jrIoTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A5A6F91FEC3B7000C67798 /* jrIoTUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1A5A6EB1FEC3B7000C67798 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1A5A6CB1FEC3B7000C67798 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1A5A6D21FEC3B7000C67798;
+			remoteInfo = jrIoT;
+		};
+		E1A5A6F61FEC3B7000C67798 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1A5A6CB1FEC3B7000C67798 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1A5A6D21FEC3B7000C67798;
+			remoteInfo = jrIoT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E1A5A6D31FEC3B7000C67798 /* jrIoT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jrIoT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1A5A6D61FEC3B7000C67798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1A5A6D81FEC3B7000C67798 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E1A5A6DB1FEC3B7000C67798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1A5A6DE1FEC3B7000C67798 /* jrIoT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = jrIoT.xcdatamodel; sourceTree = "<group>"; };
+		E1A5A6E01FEC3B7000C67798 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1A5A6E31FEC3B7000C67798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1A5A6E51FEC3B7000C67798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1A5A6EA1FEC3B7000C67798 /* jrIoTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jrIoTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1A5A6EE1FEC3B7000C67798 /* jrIoTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jrIoTTests.swift; sourceTree = "<group>"; };
+		E1A5A6F01FEC3B7000C67798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1A5A6F51FEC3B7000C67798 /* jrIoTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jrIoTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1A5A6F91FEC3B7000C67798 /* jrIoTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jrIoTUITests.swift; sourceTree = "<group>"; };
+		E1A5A6FB1FEC3B7000C67798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1A5A6D01FEC3B7000C67798 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A5A6E71FEC3B7000C67798 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A5A6F21FEC3B7000C67798 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1A5A6CA1FEC3B7000C67798 = {
+			isa = PBXGroup;
+			children = (
+				E1A5A6D51FEC3B7000C67798 /* jrIoT */,
+				E1A5A6ED1FEC3B7000C67798 /* jrIoTTests */,
+				E1A5A6F81FEC3B7000C67798 /* jrIoTUITests */,
+				E1A5A6D41FEC3B7000C67798 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1A5A6D41FEC3B7000C67798 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1A5A6D31FEC3B7000C67798 /* jrIoT.app */,
+				E1A5A6EA1FEC3B7000C67798 /* jrIoTTests.xctest */,
+				E1A5A6F51FEC3B7000C67798 /* jrIoTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1A5A6D51FEC3B7000C67798 /* jrIoT */ = {
+			isa = PBXGroup;
+			children = (
+				E1A5A6D61FEC3B7000C67798 /* AppDelegate.swift */,
+				E1A5A6D81FEC3B7000C67798 /* ViewController.swift */,
+				E1A5A6DA1FEC3B7000C67798 /* Main.storyboard */,
+				E1A5A6E01FEC3B7000C67798 /* Assets.xcassets */,
+				E1A5A6E21FEC3B7000C67798 /* LaunchScreen.storyboard */,
+				E1A5A6E51FEC3B7000C67798 /* Info.plist */,
+				E1A5A6DD1FEC3B7000C67798 /* jrIoT.xcdatamodeld */,
+			);
+			path = jrIoT;
+			sourceTree = "<group>";
+		};
+		E1A5A6ED1FEC3B7000C67798 /* jrIoTTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1A5A6EE1FEC3B7000C67798 /* jrIoTTests.swift */,
+				E1A5A6F01FEC3B7000C67798 /* Info.plist */,
+			);
+			path = jrIoTTests;
+			sourceTree = "<group>";
+		};
+		E1A5A6F81FEC3B7000C67798 /* jrIoTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E1A5A6F91FEC3B7000C67798 /* jrIoTUITests.swift */,
+				E1A5A6FB1FEC3B7000C67798 /* Info.plist */,
+			);
+			path = jrIoTUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1A5A6D21FEC3B7000C67798 /* jrIoT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1A5A6FE1FEC3B7000C67798 /* Build configuration list for PBXNativeTarget "jrIoT" */;
+			buildPhases = (
+				E1A5A6CF1FEC3B7000C67798 /* Sources */,
+				E1A5A6D01FEC3B7000C67798 /* Frameworks */,
+				E1A5A6D11FEC3B7000C67798 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jrIoT;
+			productName = jrIoT;
+			productReference = E1A5A6D31FEC3B7000C67798 /* jrIoT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1A5A6E91FEC3B7000C67798 /* jrIoTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1A5A7011FEC3B7000C67798 /* Build configuration list for PBXNativeTarget "jrIoTTests" */;
+			buildPhases = (
+				E1A5A6E61FEC3B7000C67798 /* Sources */,
+				E1A5A6E71FEC3B7000C67798 /* Frameworks */,
+				E1A5A6E81FEC3B7000C67798 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1A5A6EC1FEC3B7000C67798 /* PBXTargetDependency */,
+			);
+			name = jrIoTTests;
+			productName = jrIoTTests;
+			productReference = E1A5A6EA1FEC3B7000C67798 /* jrIoTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E1A5A6F41FEC3B7000C67798 /* jrIoTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1A5A7041FEC3B7000C67798 /* Build configuration list for PBXNativeTarget "jrIoTUITests" */;
+			buildPhases = (
+				E1A5A6F11FEC3B7000C67798 /* Sources */,
+				E1A5A6F21FEC3B7000C67798 /* Frameworks */,
+				E1A5A6F31FEC3B7000C67798 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1A5A6F71FEC3B7000C67798 /* PBXTargetDependency */,
+			);
+			name = jrIoTUITests;
+			productName = jrIoTUITests;
+			productReference = E1A5A6F51FEC3B7000C67798 /* jrIoTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1A5A6CB1FEC3B7000C67798 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "jr-soft";
+				TargetAttributes = {
+					E1A5A6D21FEC3B7000C67798 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					E1A5A6E91FEC3B7000C67798 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E1A5A6D21FEC3B7000C67798;
+					};
+					E1A5A6F41FEC3B7000C67798 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E1A5A6D21FEC3B7000C67798;
+					};
+				};
+			};
+			buildConfigurationList = E1A5A6CE1FEC3B7000C67798 /* Build configuration list for PBXProject "jrIoT" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1A5A6CA1FEC3B7000C67798;
+			productRefGroup = E1A5A6D41FEC3B7000C67798 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1A5A6D21FEC3B7000C67798 /* jrIoT */,
+				E1A5A6E91FEC3B7000C67798 /* jrIoTTests */,
+				E1A5A6F41FEC3B7000C67798 /* jrIoTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1A5A6D11FEC3B7000C67798 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A5A6E41FEC3B7000C67798 /* LaunchScreen.storyboard in Resources */,
+				E1A5A6E11FEC3B7000C67798 /* Assets.xcassets in Resources */,
+				E1A5A6DC1FEC3B7000C67798 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A5A6E81FEC3B7000C67798 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A5A6F31FEC3B7000C67798 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1A5A6CF1FEC3B7000C67798 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A5A6D91FEC3B7000C67798 /* ViewController.swift in Sources */,
+				E1A5A6D71FEC3B7000C67798 /* AppDelegate.swift in Sources */,
+				E1A5A6DF1FEC3B7000C67798 /* jrIoT.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A5A6E61FEC3B7000C67798 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A5A6EF1FEC3B7000C67798 /* jrIoTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A5A6F11FEC3B7000C67798 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A5A6FA1FEC3B7000C67798 /* jrIoTUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1A5A6EC1FEC3B7000C67798 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1A5A6D21FEC3B7000C67798 /* jrIoT */;
+			targetProxy = E1A5A6EB1FEC3B7000C67798 /* PBXContainerItemProxy */;
+		};
+		E1A5A6F71FEC3B7000C67798 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1A5A6D21FEC3B7000C67798 /* jrIoT */;
+			targetProxy = E1A5A6F61FEC3B7000C67798 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1A5A6DA1FEC3B7000C67798 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1A5A6DB1FEC3B7000C67798 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1A5A6E21FEC3B7000C67798 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1A5A6E31FEC3B7000C67798 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1A5A6FC1FEC3B7000C67798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1A5A6FD1FEC3B7000C67798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1A5A6FF1FEC3B7000C67798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MXEMDN7USP;
+				INFOPLIST_FILE = jrIoT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = at.jr1.jrIoT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1A5A7001FEC3B7000C67798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MXEMDN7USP;
+				INFOPLIST_FILE = jrIoT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = at.jr1.jrIoT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E1A5A7021FEC3B7000C67798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MXEMDN7USP;
+				INFOPLIST_FILE = jrIoTTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = at.jr1.jrIoTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jrIoT.app/jrIoT";
+			};
+			name = Debug;
+		};
+		E1A5A7031FEC3B7000C67798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MXEMDN7USP;
+				INFOPLIST_FILE = jrIoTTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = at.jr1.jrIoTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jrIoT.app/jrIoT";
+			};
+			name = Release;
+		};
+		E1A5A7051FEC3B7000C67798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MXEMDN7USP;
+				INFOPLIST_FILE = jrIoTUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = at.jr1.jrIoTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = jrIoT;
+			};
+			name = Debug;
+		};
+		E1A5A7061FEC3B7000C67798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MXEMDN7USP;
+				INFOPLIST_FILE = jrIoTUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = at.jr1.jrIoTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = jrIoT;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1A5A6CE1FEC3B7000C67798 /* Build configuration list for PBXProject "jrIoT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1A5A6FC1FEC3B7000C67798 /* Debug */,
+				E1A5A6FD1FEC3B7000C67798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1A5A6FE1FEC3B7000C67798 /* Build configuration list for PBXNativeTarget "jrIoT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1A5A6FF1FEC3B7000C67798 /* Debug */,
+				E1A5A7001FEC3B7000C67798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1A5A7011FEC3B7000C67798 /* Build configuration list for PBXNativeTarget "jrIoTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1A5A7021FEC3B7000C67798 /* Debug */,
+				E1A5A7031FEC3B7000C67798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1A5A7041FEC3B7000C67798 /* Build configuration list for PBXNativeTarget "jrIoTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1A5A7051FEC3B7000C67798 /* Debug */,
+				E1A5A7061FEC3B7000C67798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E1A5A6DD1FEC3B7000C67798 /* jrIoT.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E1A5A6DE1FEC3B7000C67798 /* jrIoT.xcdatamodel */,
+			);
+			currentVersion = E1A5A6DE1FEC3B7000C67798 /* jrIoT.xcdatamodel */;
+			path = jrIoT.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E1A5A6CB1FEC3B7000C67798 /* Project object */;
+}
