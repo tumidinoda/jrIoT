@@ -1,0 +1,924 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05AD368E5E3907BA166499A4C963F322 /* MQTTPublishPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73D00C53F0226BE9531AB089C94600 /* MQTTPublishPacket.swift */; };
+		19557B190200FFF8DFBBD72B47A0CCC5 /* MQTTDisconnectPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F8E0FFBCF95B27E3A70C2D1AF451C /* MQTTDisconnectPacket.swift */; };
+		1999795CECBD589E0CD112861F32C498 /* MQTTUnsubPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C95045370DA8B9B3C6620FC436C3DF9 /* MQTTUnsubPacket.swift */; };
+		1AFAD62411278EA6630AD90C0E843C97 /* MQTTPubAck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FB3EBEBD8312F065F7298F5C50E930 /* MQTTPubAck.swift */; };
+		1E1F11230EF22AC3373768151F25B588 /* MQTTConnectPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C9FB69CE650A08381B949F900A1648 /* MQTTConnectPacket.swift */; };
+		23F922721FDA61C215393A9F52F53A17 /* SwiftMQTT-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CE41FEDB6F391329340987BA17FC683 /* SwiftMQTT-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2923A314C7784C847819F0FF9242CDE2 /* Pods-jrIoT-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AD7F4DC8DC86D528B05AC569504491 /* Pods-jrIoT-dummy.m */; };
+		295F8C708989C723D139AB7935CD17A7 /* MQTTUnSubAckPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244A098D345E370F879DD2ED8BF0554 /* MQTTUnSubAckPacket.swift */; };
+		30298A87961B43065CA4EAAF0E34FBF9 /* MQTTSubAckPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59D516DBF702F3A2DCF0B5A18AC0D94 /* MQTTSubAckPacket.swift */; };
+		40C7183C7D3C4A765F406CA00A17C4C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		40F9A8AAAE980FF8EB6716B97FC4CB9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		4D96EA9F57DDF438B96C2533DB173B05 /* MQTTPubMsg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFE6519C0631CC1D3D9B15215C8A5DB /* MQTTPubMsg.swift */; };
+		5F3A25749161684D30CC21ED716BCCEE /* MQTTPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25082262FB21CA630A6F174FBC0AC09 /* MQTTPacket.swift */; };
+		73BFA438A8C9D8F5E9AC97F024CA8D55 /* MQTTSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40F4A946AB416DB7AFAD87BA18833F /* MQTTSession.swift */; };
+		8AA8D65AC2C865721CE569EDE2CDFE75 /* MQTTPingPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F29A28CA3218A27EF2D0BF938D8D6D /* MQTTPingPacket.swift */; };
+		8E7EE83FD467F984892B54F046F1C369 /* Pods-jrIoTUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DB8FB1BE73AC01BE6A636A64664C0F7 /* Pods-jrIoTUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D8FF136A3B1CF40AF27A2F5B46656DD /* MQTTPingResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0A420219E6BDBCF9682F731E00A9D3 /* MQTTPingResp.swift */; };
+		A427D4BE09B5605ED04E63697AA11F18 /* Pods-jrIoTTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13E4A3BC4EBAE3C59E21C4A9103D8547 /* Pods-jrIoTTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5BCB33D1BB7CF42B6FC595866930ADB /* Pods-jrIoTUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FED1C5FD9A39B6BE086B258D87BD3EA /* Pods-jrIoTUITests-dummy.m */; };
+		B793F0219E38EA1D3BEAF7EF0E08E737 /* SwiftMQTT-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 522E743E697A8FFB32B3CE6CB538D3BB /* SwiftMQTT-dummy.m */; };
+		BF39F6B84A1D7EA6DC9473E1C6BAC067 /* MQTTPacketFixedHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DB0E2B1C59508D1E4BD30976B5670B /* MQTTPacketFixedHeader.swift */; };
+		C6E36A6C918D786C64EF347C91FEC500 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CCABA6AE7EC76F1F12C2E62F10CDD607 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D2BF8728DA40957581DCE4777BF85E5D /* MQTTSubPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF8E897CD8625EF2A2F4C862607CC63 /* MQTTSubPacket.swift */; };
+		D99DAF8464DFD25307194D48DFF98C02 /* Pods-jrIoTTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7654210C9A0D3BE364BEB6F21EA3B847 /* Pods-jrIoTTests-dummy.m */; };
+		DE066F9BD28D420CB86F15039E90DECB /* MQTTSessionStreamDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369502204615933DE451E8204E90A53D /* MQTTSessionStreamDelegate.swift */; };
+		F08C08AA663D692FF5254BE33307A369 /* Pods-jrIoT-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7328FCE1032C5FDDDD138D280C3F9A5 /* Pods-jrIoT-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6104644819BC895652292BB26DB5A62 /* MQTTExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4E91D563732A37E64A68146DECDB7C /* MQTTExtensions.swift */; };
+		FA299ABF74F443DB2C65EFCA09DCEDCC /* MQTTConnAckPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A444AB1E357F75E2AE785E93D8D64248 /* MQTTConnAckPacket.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAFDBEC8C23B6C34B97BDF83537E70C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 886C6A251A2D8D6689E66B7579D8DE06;
+			remoteInfo = SwiftMQTT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05F8E8797592DF374CC9AFAAF4F75C45 /* Pods-jrIoTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-jrIoTUITests.release.xcconfig"; sourceTree = "<group>"; };
+		06BE1F00EF62AC246475C11884CB1A51 /* Pods-jrIoTTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-jrIoTTests.release.xcconfig"; sourceTree = "<group>"; };
+		06DB0E2B1C59508D1E4BD30976B5670B /* MQTTPacketFixedHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPacketFixedHeader.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPacketFixedHeader.swift; sourceTree = "<group>"; };
+		0CE41FEDB6F391329340987BA17FC683 /* SwiftMQTT-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMQTT-umbrella.h"; sourceTree = "<group>"; };
+		0F54628F360F10A8543C7872688D0D98 /* Pods-jrIoTUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-jrIoTUITests-resources.sh"; sourceTree = "<group>"; };
+		1339AC38156BAE0A4CC1D3CFBC99D595 /* Pods-jrIoT-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-jrIoT-acknowledgements.markdown"; sourceTree = "<group>"; };
+		13AD7F4DC8DC86D528B05AC569504491 /* Pods-jrIoT-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-jrIoT-dummy.m"; sourceTree = "<group>"; };
+		13E4A3BC4EBAE3C59E21C4A9103D8547 /* Pods-jrIoTTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-jrIoTTests-umbrella.h"; sourceTree = "<group>"; };
+		192375FD79BE2211FAE3743AC64D4AE3 /* Pods-jrIoTTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-jrIoTTests-resources.sh"; sourceTree = "<group>"; };
+		19FB3EBEBD8312F065F7298F5C50E930 /* MQTTPubAck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPubAck.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPubAck.swift; sourceTree = "<group>"; };
+		1C95045370DA8B9B3C6620FC436C3DF9 /* MQTTUnsubPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTUnsubPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTUnsubPacket.swift; sourceTree = "<group>"; };
+		1D8C8A861C426E57E7B823F6F4E349EC /* Pods-jrIoT-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-jrIoT-frameworks.sh"; sourceTree = "<group>"; };
+		1E40F4A946AB416DB7AFAD87BA18833F /* MQTTSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTSession.swift; path = SwiftMQTT/SwiftMQTT/MQTTSession.swift; sourceTree = "<group>"; };
+		1EDADAE718F76C5032D4DEF23067226C /* Pods-jrIoT-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-jrIoT-acknowledgements.plist"; sourceTree = "<group>"; };
+		2244A098D345E370F879DD2ED8BF0554 /* MQTTUnSubAckPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTUnSubAckPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTUnSubAckPacket.swift; sourceTree = "<group>"; };
+		22C9FB69CE650A08381B949F900A1648 /* MQTTConnectPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTConnectPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTConnectPacket.swift; sourceTree = "<group>"; };
+		25C0896202F60298D536ACB0E2D92FCB /* Pods-jrIoTTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-jrIoTTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2991577D4431F68C33235F5549691209 /* SwiftMQTT-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMQTT-prefix.pch"; sourceTree = "<group>"; };
+		35F29A28CA3218A27EF2D0BF938D8D6D /* MQTTPingPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPingPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPingPacket.swift; sourceTree = "<group>"; };
+		369502204615933DE451E8204E90A53D /* MQTTSessionStreamDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTSessionStreamDelegate.swift; path = SwiftMQTT/SwiftMQTT/MQTTSessionStreamDelegate.swift; sourceTree = "<group>"; };
+		3EF8E897CD8625EF2A2F4C862607CC63 /* MQTTSubPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTSubPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTSubPacket.swift; sourceTree = "<group>"; };
+		46F1B62B828605CED1D221C8EDB933F1 /* SwiftMQTT.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftMQTT.xcconfig; sourceTree = "<group>"; };
+		4FB560D721F2B2631155B707FDF36DBF /* SwiftMQTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMQTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FED1C5FD9A39B6BE086B258D87BD3EA /* Pods-jrIoTUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-jrIoTUITests-dummy.m"; sourceTree = "<group>"; };
+		522E743E697A8FFB32B3CE6CB538D3BB /* SwiftMQTT-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftMQTT-dummy.m"; sourceTree = "<group>"; };
+		546D5135F570AEBAEACDDF3D99D1C372 /* Pods-jrIoTTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-jrIoTTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5DFE6519C0631CC1D3D9B15215C8A5DB /* MQTTPubMsg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPubMsg.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPubMsg.swift; sourceTree = "<group>"; };
+		60E165890A84FF5C37A51502B0FDF05A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6A8D48FFF699167F81DF66E8DC95B987 /* Pods-jrIoTTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-jrIoTTests-frameworks.sh"; sourceTree = "<group>"; };
+		6A8D86CB79DE641580CA1CC5B6E8C2C6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D0A420219E6BDBCF9682F731E00A9D3 /* MQTTPingResp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPingResp.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPingResp.swift; sourceTree = "<group>"; };
+		7654210C9A0D3BE364BEB6F21EA3B847 /* Pods-jrIoTTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-jrIoTTests-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93D5E0ECC1B58E4FB7ED4AA220392162 /* Pods-jrIoTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-jrIoTUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A4626C57749B1DD39F3588FB063C802 /* Pods-jrIoTUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-jrIoTUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9DB8FB1BE73AC01BE6A636A64664C0F7 /* Pods-jrIoTUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-jrIoTUITests-umbrella.h"; sourceTree = "<group>"; };
+		9F4710343471E3ED6845A205D0050ADB /* Pods-jrIoTUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-jrIoTUITests.modulemap"; sourceTree = "<group>"; };
+		A444AB1E357F75E2AE785E93D8D64248 /* MQTTConnAckPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTConnAckPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTConnAckPacket.swift; sourceTree = "<group>"; };
+		A54EFB6997849F3D9492F076202A2748 /* SwiftMQTT.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftMQTT.modulemap; sourceTree = "<group>"; };
+		A59D516DBF702F3A2DCF0B5A18AC0D94 /* MQTTSubAckPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTSubAckPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTSubAckPacket.swift; sourceTree = "<group>"; };
+		AC73D00C53F0226BE9531AB089C94600 /* MQTTPublishPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPublishPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPublishPacket.swift; sourceTree = "<group>"; };
+		AD57B52E2037076D776934020B575D39 /* Pods-jrIoT-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-jrIoT-resources.sh"; sourceTree = "<group>"; };
+		B8C8E2C7BBB87F20C1CA9A43D77B4B45 /* Pods-jrIoT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-jrIoT.debug.xcconfig"; sourceTree = "<group>"; };
+		C60C8D872247F285AE69AC62D37E4317 /* Pods-jrIoTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-jrIoTTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB893D6E777953730440572A8640FCDF /* Pods_jrIoTTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jrIoTTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D1D4160069D17FEA2E3ECFBBB00BEC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D25082262FB21CA630A6F174FBC0AC09 /* MQTTPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPacket.swift; sourceTree = "<group>"; };
+		D365DE80F59964C8AEA43ED6649D1856 /* Pods-jrIoT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-jrIoT.release.xcconfig"; sourceTree = "<group>"; };
+		D5D7D9B6A42132281A2D8D95CA7940AE /* Pods-jrIoTTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-jrIoTTests.modulemap"; sourceTree = "<group>"; };
+		D7AD6B30B9E046A28D0632973CE5D316 /* Pods_jrIoT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jrIoT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE0E7EF94BCB2CAFE8B1CB9D6DCBF740 /* Pods-jrIoTUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-jrIoTUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E6E1FF3351B1EDD57AEE9C301B9D5A12 /* Pods_jrIoTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jrIoTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7602F6D20415E1B02235E77C8F4C232 /* Pods-jrIoT.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-jrIoT.modulemap"; sourceTree = "<group>"; };
+		F2D88B11CF296696DC8133CD3717C322 /* Pods-jrIoTUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-jrIoTUITests-frameworks.sh"; sourceTree = "<group>"; };
+		F7328FCE1032C5FDDDD138D280C3F9A5 /* Pods-jrIoT-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-jrIoT-umbrella.h"; sourceTree = "<group>"; };
+		FB4E91D563732A37E64A68146DECDB7C /* MQTTExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTExtensions.swift; path = SwiftMQTT/SwiftMQTT/MQTTExtensions.swift; sourceTree = "<group>"; };
+		FC3E21B5BAE812416046F9C3CC60AC8D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF1F8E0FFBCF95B27E3A70C2D1AF451C /* MQTTDisconnectPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTDisconnectPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTDisconnectPacket.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03B6BD0729EA2FB5542F78C4922D510C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCABA6AE7EC76F1F12C2E62F10CDD607 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57001A9CE428F8CCABEC0EE808BC4FC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40F9A8AAAE980FF8EB6716B97FC4CB9F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26D2EC09E3C10409DEED4948EB35812 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C7183C7D3C4A765F406CA00A17C4C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4962CE3BEF9ACBFC5309A30D0DA2013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6E36A6C918D786C64EF347C91FEC500 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A2B311964DF9EB2C5F0548C7ED9341D /* SwiftMQTT */ = {
+			isa = PBXGroup;
+			children = (
+				A444AB1E357F75E2AE785E93D8D64248 /* MQTTConnAckPacket.swift */,
+				22C9FB69CE650A08381B949F900A1648 /* MQTTConnectPacket.swift */,
+				FF1F8E0FFBCF95B27E3A70C2D1AF451C /* MQTTDisconnectPacket.swift */,
+				FB4E91D563732A37E64A68146DECDB7C /* MQTTExtensions.swift */,
+				D25082262FB21CA630A6F174FBC0AC09 /* MQTTPacket.swift */,
+				06DB0E2B1C59508D1E4BD30976B5670B /* MQTTPacketFixedHeader.swift */,
+				35F29A28CA3218A27EF2D0BF938D8D6D /* MQTTPingPacket.swift */,
+				6D0A420219E6BDBCF9682F731E00A9D3 /* MQTTPingResp.swift */,
+				19FB3EBEBD8312F065F7298F5C50E930 /* MQTTPubAck.swift */,
+				AC73D00C53F0226BE9531AB089C94600 /* MQTTPublishPacket.swift */,
+				5DFE6519C0631CC1D3D9B15215C8A5DB /* MQTTPubMsg.swift */,
+				1E40F4A946AB416DB7AFAD87BA18833F /* MQTTSession.swift */,
+				369502204615933DE451E8204E90A53D /* MQTTSessionStreamDelegate.swift */,
+				A59D516DBF702F3A2DCF0B5A18AC0D94 /* MQTTSubAckPacket.swift */,
+				3EF8E897CD8625EF2A2F4C862607CC63 /* MQTTSubPacket.swift */,
+				2244A098D345E370F879DD2ED8BF0554 /* MQTTUnSubAckPacket.swift */,
+				1C95045370DA8B9B3C6620FC436C3DF9 /* MQTTUnsubPacket.swift */,
+				4C9F63ABDF924B3B4C270C7F1E99EEB8 /* Support Files */,
+			);
+			path = SwiftMQTT;
+			sourceTree = "<group>";
+		};
+		4A51E08E2902F3A860D24AC5A22AFED9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A2B311964DF9EB2C5F0548C7ED9341D /* SwiftMQTT */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4C9F63ABDF924B3B4C270C7F1E99EEB8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0D1D4160069D17FEA2E3ECFBBB00BEC /* Info.plist */,
+				A54EFB6997849F3D9492F076202A2748 /* SwiftMQTT.modulemap */,
+				46F1B62B828605CED1D221C8EDB933F1 /* SwiftMQTT.xcconfig */,
+				522E743E697A8FFB32B3CE6CB538D3BB /* SwiftMQTT-dummy.m */,
+				2991577D4431F68C33235F5549691209 /* SwiftMQTT-prefix.pch */,
+				0CE41FEDB6F391329340987BA17FC683 /* SwiftMQTT-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftMQTT";
+			sourceTree = "<group>";
+		};
+		72914893B75B9619673DDFFA2F25C455 /* Pods-jrIoT */ = {
+			isa = PBXGroup;
+			children = (
+				60E165890A84FF5C37A51502B0FDF05A /* Info.plist */,
+				E7602F6D20415E1B02235E77C8F4C232 /* Pods-jrIoT.modulemap */,
+				1339AC38156BAE0A4CC1D3CFBC99D595 /* Pods-jrIoT-acknowledgements.markdown */,
+				1EDADAE718F76C5032D4DEF23067226C /* Pods-jrIoT-acknowledgements.plist */,
+				13AD7F4DC8DC86D528B05AC569504491 /* Pods-jrIoT-dummy.m */,
+				1D8C8A861C426E57E7B823F6F4E349EC /* Pods-jrIoT-frameworks.sh */,
+				AD57B52E2037076D776934020B575D39 /* Pods-jrIoT-resources.sh */,
+				F7328FCE1032C5FDDDD138D280C3F9A5 /* Pods-jrIoT-umbrella.h */,
+				B8C8E2C7BBB87F20C1CA9A43D77B4B45 /* Pods-jrIoT.debug.xcconfig */,
+				D365DE80F59964C8AEA43ED6649D1856 /* Pods-jrIoT.release.xcconfig */,
+			);
+			name = "Pods-jrIoT";
+			path = "Target Support Files/Pods-jrIoT";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				4A51E08E2902F3A860D24AC5A22AFED9 /* Pods */,
+				AA5B9C6AE39E6091D945FE9762095A7A /* Products */,
+				F98A62BECB0C03346118DCCEC0E7EA36 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AA5B9C6AE39E6091D945FE9762095A7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7AD6B30B9E046A28D0632973CE5D316 /* Pods_jrIoT.framework */,
+				CB893D6E777953730440572A8640FCDF /* Pods_jrIoTTests.framework */,
+				E6E1FF3351B1EDD57AEE9C301B9D5A12 /* Pods_jrIoTUITests.framework */,
+				4FB560D721F2B2631155B707FDF36DBF /* SwiftMQTT.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACD7C20746F4955F04949EBE60693A91 /* Pods-jrIoTTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A8D86CB79DE641580CA1CC5B6E8C2C6 /* Info.plist */,
+				D5D7D9B6A42132281A2D8D95CA7940AE /* Pods-jrIoTTests.modulemap */,
+				546D5135F570AEBAEACDDF3D99D1C372 /* Pods-jrIoTTests-acknowledgements.markdown */,
+				25C0896202F60298D536ACB0E2D92FCB /* Pods-jrIoTTests-acknowledgements.plist */,
+				7654210C9A0D3BE364BEB6F21EA3B847 /* Pods-jrIoTTests-dummy.m */,
+				6A8D48FFF699167F81DF66E8DC95B987 /* Pods-jrIoTTests-frameworks.sh */,
+				192375FD79BE2211FAE3743AC64D4AE3 /* Pods-jrIoTTests-resources.sh */,
+				13E4A3BC4EBAE3C59E21C4A9103D8547 /* Pods-jrIoTTests-umbrella.h */,
+				C60C8D872247F285AE69AC62D37E4317 /* Pods-jrIoTTests.debug.xcconfig */,
+				06BE1F00EF62AC246475C11884CB1A51 /* Pods-jrIoTTests.release.xcconfig */,
+			);
+			name = "Pods-jrIoTTests";
+			path = "Target Support Files/Pods-jrIoTTests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E4263E7CADF5706F686A9110FB7071A7 /* Pods-jrIoTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC3E21B5BAE812416046F9C3CC60AC8D /* Info.plist */,
+				9F4710343471E3ED6845A205D0050ADB /* Pods-jrIoTUITests.modulemap */,
+				DE0E7EF94BCB2CAFE8B1CB9D6DCBF740 /* Pods-jrIoTUITests-acknowledgements.markdown */,
+				9A4626C57749B1DD39F3588FB063C802 /* Pods-jrIoTUITests-acknowledgements.plist */,
+				4FED1C5FD9A39B6BE086B258D87BD3EA /* Pods-jrIoTUITests-dummy.m */,
+				F2D88B11CF296696DC8133CD3717C322 /* Pods-jrIoTUITests-frameworks.sh */,
+				0F54628F360F10A8543C7872688D0D98 /* Pods-jrIoTUITests-resources.sh */,
+				9DB8FB1BE73AC01BE6A636A64664C0F7 /* Pods-jrIoTUITests-umbrella.h */,
+				93D5E0ECC1B58E4FB7ED4AA220392162 /* Pods-jrIoTUITests.debug.xcconfig */,
+				05F8E8797592DF374CC9AFAAF4F75C45 /* Pods-jrIoTUITests.release.xcconfig */,
+			);
+			name = "Pods-jrIoTUITests";
+			path = "Target Support Files/Pods-jrIoTUITests";
+			sourceTree = "<group>";
+		};
+		F98A62BECB0C03346118DCCEC0E7EA36 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				72914893B75B9619673DDFFA2F25C455 /* Pods-jrIoT */,
+				ACD7C20746F4955F04949EBE60693A91 /* Pods-jrIoTTests */,
+				E4263E7CADF5706F686A9110FB7071A7 /* Pods-jrIoTUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1BADBE11BD406D307E647A882F3E6F18 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F08C08AA663D692FF5254BE33307A369 /* Pods-jrIoT-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69F264908D032D66124F13F3B6DC4DB9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E7EE83FD467F984892B54F046F1C369 /* Pods-jrIoTUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10E9193016335B42DD37C6BEC7ECA97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F922721FDA61C215393A9F52F53A17 /* SwiftMQTT-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F79C231955FBAD4386919981C89063FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A427D4BE09B5605ED04E63697AA11F18 /* Pods-jrIoTTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		308823339A6C72F9E47917EFB6CB5FEB /* Pods-jrIoT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82F9ECB1B1F04FEC23649A2E35F85ECB /* Build configuration list for PBXNativeTarget "Pods-jrIoT" */;
+			buildPhases = (
+				C4EA62975E0610B7B2082E1528A5619F /* Sources */,
+				57001A9CE428F8CCABEC0EE808BC4FC3 /* Frameworks */,
+				1BADBE11BD406D307E647A882F3E6F18 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00F56E1DC07D3EC8C6CC82DCCD3F4179 /* PBXTargetDependency */,
+			);
+			name = "Pods-jrIoT";
+			productName = "Pods-jrIoT";
+			productReference = D7AD6B30B9E046A28D0632973CE5D316 /* Pods_jrIoT.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7E0D66B295EA6C8A4EF2126570AE2413 /* Pods-jrIoTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E118C046083DBCF6247422A025FD15CF /* Build configuration list for PBXNativeTarget "Pods-jrIoTUITests" */;
+			buildPhases = (
+				119E90B03F138CE9ABC18C739B768854 /* Sources */,
+				B26D2EC09E3C10409DEED4948EB35812 /* Frameworks */,
+				69F264908D032D66124F13F3B6DC4DB9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-jrIoTUITests";
+			productName = "Pods-jrIoTUITests";
+			productReference = E6E1FF3351B1EDD57AEE9C301B9D5A12 /* Pods_jrIoTUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		886C6A251A2D8D6689E66B7579D8DE06 /* SwiftMQTT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAC97EACBB30F743778725CA44309885 /* Build configuration list for PBXNativeTarget "SwiftMQTT" */;
+			buildPhases = (
+				9C3F5996E3E54152C2D620DDA4BE5E27 /* Sources */,
+				03B6BD0729EA2FB5542F78C4922D510C /* Frameworks */,
+				C10E9193016335B42DD37C6BEC7ECA97 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftMQTT;
+			productName = SwiftMQTT;
+			productReference = 4FB560D721F2B2631155B707FDF36DBF /* SwiftMQTT.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BEB55BE4B0445628367B098D05201482 /* Pods-jrIoTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A15D60178E6197B00B139FB86BCCA5D7 /* Build configuration list for PBXNativeTarget "Pods-jrIoTTests" */;
+			buildPhases = (
+				CDF7D774B238049628F396A96A888DE9 /* Sources */,
+				B4962CE3BEF9ACBFC5309A30D0DA2013 /* Frameworks */,
+				F79C231955FBAD4386919981C89063FB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-jrIoTTests";
+			productName = "Pods-jrIoTTests";
+			productReference = CB893D6E777953730440572A8640FCDF /* Pods_jrIoTTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0920;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = AA5B9C6AE39E6091D945FE9762095A7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				308823339A6C72F9E47917EFB6CB5FEB /* Pods-jrIoT */,
+				BEB55BE4B0445628367B098D05201482 /* Pods-jrIoTTests */,
+				7E0D66B295EA6C8A4EF2126570AE2413 /* Pods-jrIoTUITests */,
+				886C6A251A2D8D6689E66B7579D8DE06 /* SwiftMQTT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		119E90B03F138CE9ABC18C739B768854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5BCB33D1BB7CF42B6FC595866930ADB /* Pods-jrIoTUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C3F5996E3E54152C2D620DDA4BE5E27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA299ABF74F443DB2C65EFCA09DCEDCC /* MQTTConnAckPacket.swift in Sources */,
+				1E1F11230EF22AC3373768151F25B588 /* MQTTConnectPacket.swift in Sources */,
+				19557B190200FFF8DFBBD72B47A0CCC5 /* MQTTDisconnectPacket.swift in Sources */,
+				F6104644819BC895652292BB26DB5A62 /* MQTTExtensions.swift in Sources */,
+				5F3A25749161684D30CC21ED716BCCEE /* MQTTPacket.swift in Sources */,
+				BF39F6B84A1D7EA6DC9473E1C6BAC067 /* MQTTPacketFixedHeader.swift in Sources */,
+				8AA8D65AC2C865721CE569EDE2CDFE75 /* MQTTPingPacket.swift in Sources */,
+				9D8FF136A3B1CF40AF27A2F5B46656DD /* MQTTPingResp.swift in Sources */,
+				1AFAD62411278EA6630AD90C0E843C97 /* MQTTPubAck.swift in Sources */,
+				05AD368E5E3907BA166499A4C963F322 /* MQTTPublishPacket.swift in Sources */,
+				4D96EA9F57DDF438B96C2533DB173B05 /* MQTTPubMsg.swift in Sources */,
+				73BFA438A8C9D8F5E9AC97F024CA8D55 /* MQTTSession.swift in Sources */,
+				DE066F9BD28D420CB86F15039E90DECB /* MQTTSessionStreamDelegate.swift in Sources */,
+				30298A87961B43065CA4EAAF0E34FBF9 /* MQTTSubAckPacket.swift in Sources */,
+				D2BF8728DA40957581DCE4777BF85E5D /* MQTTSubPacket.swift in Sources */,
+				295F8C708989C723D139AB7935CD17A7 /* MQTTUnSubAckPacket.swift in Sources */,
+				1999795CECBD589E0CD112861F32C498 /* MQTTUnsubPacket.swift in Sources */,
+				B793F0219E38EA1D3BEAF7EF0E08E737 /* SwiftMQTT-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EA62975E0610B7B2082E1528A5619F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2923A314C7784C847819F0FF9242CDE2 /* Pods-jrIoT-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDF7D774B238049628F396A96A888DE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99DAF8464DFD25307194D48DFF98C02 /* Pods-jrIoTTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00F56E1DC07D3EC8C6CC82DCCD3F4179 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftMQTT;
+			target = 886C6A251A2D8D6689E66B7579D8DE06 /* SwiftMQTT */;
+			targetProxy = AAFDBEC8C23B6C34B97BDF83537E70C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5B0242C819A85A59C57BA6C2F0AFC3CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8C8E2C7BBB87F20C1CA9A43D77B4B45 /* Pods-jrIoT.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-jrIoT/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-jrIoT/Pods-jrIoT.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_jrIoT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A0BBC3417003600EE2A800F9683B863F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46F1B62B828605CED1D221C8EDB933F1 /* SwiftMQTT.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftMQTT/SwiftMQTT-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftMQTT/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftMQTT/SwiftMQTT.modulemap";
+				PRODUCT_NAME = SwiftMQTT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5B11F2C308FBEEA8796EC50F550236A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93D5E0ECC1B58E4FB7ED4AA220392162 /* Pods-jrIoTUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-jrIoTUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-jrIoTUITests/Pods-jrIoTUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_jrIoTUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ABA7A24279EE5F5D82C9733F01FEED50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D365DE80F59964C8AEA43ED6649D1856 /* Pods-jrIoT.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-jrIoT/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-jrIoT/Pods-jrIoT.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_jrIoT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6CACF3429890CF0B0AD94CC1A89780D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46F1B62B828605CED1D221C8EDB933F1 /* SwiftMQTT.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftMQTT/SwiftMQTT-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftMQTT/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftMQTT/SwiftMQTT.modulemap";
+				PRODUCT_NAME = SwiftMQTT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C9C7F58C5E9519D080308033A725FC5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06BE1F00EF62AC246475C11884CB1A51 /* Pods-jrIoTTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-jrIoTTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-jrIoTTests/Pods-jrIoTTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_jrIoTTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E63E4D7A6ACEC6F4A93161DDA3416DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C60C8D872247F285AE69AC62D37E4317 /* Pods-jrIoTTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-jrIoTTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-jrIoTTests/Pods-jrIoTTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_jrIoTTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EDBC3D69FE0847F96742754311E12213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05F8E8797592DF374CC9AFAAF4F75C45 /* Pods-jrIoTUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-jrIoTUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-jrIoTUITests/Pods-jrIoTUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_jrIoTUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C5BC78A31CDE101068C530CAC7FA0F /* Debug */,
+				89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82F9ECB1B1F04FEC23649A2E35F85ECB /* Build configuration list for PBXNativeTarget "Pods-jrIoT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B0242C819A85A59C57BA6C2F0AFC3CD /* Debug */,
+				ABA7A24279EE5F5D82C9733F01FEED50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A15D60178E6197B00B139FB86BCCA5D7 /* Build configuration list for PBXNativeTarget "Pods-jrIoTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E63E4D7A6ACEC6F4A93161DDA3416DED /* Debug */,
+				C9C7F58C5E9519D080308033A725FC5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAC97EACBB30F743778725CA44309885 /* Build configuration list for PBXNativeTarget "SwiftMQTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0BBC3417003600EE2A800F9683B863F /* Debug */,
+				B6CACF3429890CF0B0AD94CC1A89780D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E118C046083DBCF6247422A025FD15CF /* Build configuration list for PBXNativeTarget "Pods-jrIoTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5B11F2C308FBEEA8796EC50F550236A /* Debug */,
+				EDBC3D69FE0847F96742754311E12213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

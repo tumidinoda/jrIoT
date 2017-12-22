@@ -1,0 +1,6 @@
+framework module Pods_jrIoTTests {
+  umbrella header "Pods-jrIoTTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

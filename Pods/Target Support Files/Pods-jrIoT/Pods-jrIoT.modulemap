@@ -1,0 +1,6 @@
+framework module Pods_jrIoT {
+  umbrella header "Pods-jrIoT-umbrella.h"
+
+  export *
+  module * { export * }
+}
