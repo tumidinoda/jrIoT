@@ -8,6 +8,7 @@
 
 import XCTest
 @testable import jrIoT
+@testable import SwiftMQTT
 
 class IoTitemTest: XCTestCase {
     //-----------------------------------------------------------------------------------

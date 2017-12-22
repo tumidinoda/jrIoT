@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -71,7 +71,7 @@
 		369502204615933DE451E8204E90A53D /* MQTTSessionStreamDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTSessionStreamDelegate.swift; path = SwiftMQTT/SwiftMQTT/MQTTSessionStreamDelegate.swift; sourceTree = "<group>"; };
 		3EF8E897CD8625EF2A2F4C862607CC63 /* MQTTSubPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTSubPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTSubPacket.swift; sourceTree = "<group>"; };
 		46F1B62B828605CED1D221C8EDB933F1 /* SwiftMQTT.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftMQTT.xcconfig; sourceTree = "<group>"; };
-		4FB560D721F2B2631155B707FDF36DBF /* SwiftMQTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMQTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FB560D721F2B2631155B707FDF36DBF /* SwiftMQTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftMQTT.framework; path = SwiftMQTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FED1C5FD9A39B6BE086B258D87BD3EA /* Pods-jrIoTUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-jrIoTUITests-dummy.m"; sourceTree = "<group>"; };
 		522E743E697A8FFB32B3CE6CB538D3BB /* SwiftMQTT-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftMQTT-dummy.m"; sourceTree = "<group>"; };
 		546D5135F570AEBAEACDDF3D99D1C372 /* Pods-jrIoTTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-jrIoTTests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -82,27 +82,27 @@
 		6A8D86CB79DE641580CA1CC5B6E8C2C6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D0A420219E6BDBCF9682F731E00A9D3 /* MQTTPingResp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPingResp.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPingResp.swift; sourceTree = "<group>"; };
 		7654210C9A0D3BE364BEB6F21EA3B847 /* Pods-jrIoTTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-jrIoTTests-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93D5E0ECC1B58E4FB7ED4AA220392162 /* Pods-jrIoTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-jrIoTUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A4626C57749B1DD39F3588FB063C802 /* Pods-jrIoTUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-jrIoTUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9DB8FB1BE73AC01BE6A636A64664C0F7 /* Pods-jrIoTUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-jrIoTUITests-umbrella.h"; sourceTree = "<group>"; };
-		9F4710343471E3ED6845A205D0050ADB /* Pods-jrIoTUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-jrIoTUITests.modulemap"; sourceTree = "<group>"; };
+		9F4710343471E3ED6845A205D0050ADB /* Pods-jrIoTUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-jrIoTUITests.modulemap"; sourceTree = "<group>"; };
 		A444AB1E357F75E2AE785E93D8D64248 /* MQTTConnAckPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTConnAckPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTConnAckPacket.swift; sourceTree = "<group>"; };
-		A54EFB6997849F3D9492F076202A2748 /* SwiftMQTT.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftMQTT.modulemap; sourceTree = "<group>"; };
+		A54EFB6997849F3D9492F076202A2748 /* SwiftMQTT.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftMQTT.modulemap; sourceTree = "<group>"; };
 		A59D516DBF702F3A2DCF0B5A18AC0D94 /* MQTTSubAckPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTSubAckPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTSubAckPacket.swift; sourceTree = "<group>"; };
 		AC73D00C53F0226BE9531AB089C94600 /* MQTTPublishPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPublishPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPublishPacket.swift; sourceTree = "<group>"; };
 		AD57B52E2037076D776934020B575D39 /* Pods-jrIoT-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-jrIoT-resources.sh"; sourceTree = "<group>"; };
 		B8C8E2C7BBB87F20C1CA9A43D77B4B45 /* Pods-jrIoT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-jrIoT.debug.xcconfig"; sourceTree = "<group>"; };
 		C60C8D872247F285AE69AC62D37E4317 /* Pods-jrIoTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-jrIoTTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CB893D6E777953730440572A8640FCDF /* Pods_jrIoTTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jrIoTTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB893D6E777953730440572A8640FCDF /* Pods_jrIoTTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_jrIoTTests.framework; path = "Pods-jrIoTTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D1D4160069D17FEA2E3ECFBBB00BEC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D25082262FB21CA630A6F174FBC0AC09 /* MQTTPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPacket.swift; sourceTree = "<group>"; };
 		D365DE80F59964C8AEA43ED6649D1856 /* Pods-jrIoT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-jrIoT.release.xcconfig"; sourceTree = "<group>"; };
-		D5D7D9B6A42132281A2D8D95CA7940AE /* Pods-jrIoTTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-jrIoTTests.modulemap"; sourceTree = "<group>"; };
-		D7AD6B30B9E046A28D0632973CE5D316 /* Pods_jrIoT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jrIoT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5D7D9B6A42132281A2D8D95CA7940AE /* Pods-jrIoTTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-jrIoTTests.modulemap"; sourceTree = "<group>"; };
+		D7AD6B30B9E046A28D0632973CE5D316 /* Pods_jrIoT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_jrIoT.framework; path = "Pods-jrIoT.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE0E7EF94BCB2CAFE8B1CB9D6DCBF740 /* Pods-jrIoTUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-jrIoTUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E6E1FF3351B1EDD57AEE9C301B9D5A12 /* Pods_jrIoTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jrIoTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7602F6D20415E1B02235E77C8F4C232 /* Pods-jrIoT.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-jrIoT.modulemap"; sourceTree = "<group>"; };
+		E6E1FF3351B1EDD57AEE9C301B9D5A12 /* Pods_jrIoTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_jrIoTUITests.framework; path = "Pods-jrIoTUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7602F6D20415E1B02235E77C8F4C232 /* Pods-jrIoT.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-jrIoT.modulemap"; sourceTree = "<group>"; };
 		F2D88B11CF296696DC8133CD3717C322 /* Pods-jrIoTUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-jrIoTUITests-frameworks.sh"; sourceTree = "<group>"; };
 		F7328FCE1032C5FDDDD138D280C3F9A5 /* Pods-jrIoT-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-jrIoT-umbrella.h"; sourceTree = "<group>"; };
 		FB4E91D563732A37E64A68146DECDB7C /* MQTTExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTExtensions.swift; path = SwiftMQTT/SwiftMQTT/MQTTExtensions.swift; sourceTree = "<group>"; };
@@ -168,6 +168,7 @@
 				1C95045370DA8B9B3C6620FC436C3DF9 /* MQTTUnsubPacket.swift */,
 				4C9F63ABDF924B3B4C270C7F1E99EEB8 /* Support Files */,
 			);
+			name = SwiftMQTT;
 			path = SwiftMQTT;
 			sourceTree = "<group>";
 		};
@@ -409,7 +410,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -638,7 +639,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;

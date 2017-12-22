@@ -22,4 +22,4 @@ target 'jrIoT' do
 
 end
 
-workspace jrIoT.xcodeproj
+workspace 'jrIoT.xcodeproj'

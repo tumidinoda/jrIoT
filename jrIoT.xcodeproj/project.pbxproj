@@ -20,6 +20,7 @@
 		E1A5A6E11FEC3B7000C67798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A5A6E01FEC3B7000C67798 /* Assets.xcassets */; };
 		E1A5A6E41FEC3B7000C67798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A5A6E21FEC3B7000C67798 /* LaunchScreen.storyboard */; };
 		E1A5A6FA1FEC3B7000C67798 /* jrIoTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A5A6F91FEC3B7000C67798 /* jrIoTUITests.swift */; };
+		E1F239C01FED6D0300A5C87C /* SwiftMQTT in Resources */ = {isa = PBXBuildFile; fileRef = E1F239BF1FED6D0300A5C87C /* SwiftMQTT */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		E1A5A6F51FEC3B7000C67798 /* jrIoTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jrIoTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A5A6F91FEC3B7000C67798 /* jrIoTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jrIoTUITests.swift; sourceTree = "<group>"; };
 		E1A5A6FB1FEC3B7000C67798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1F239BF1FED6D0300A5C87C /* SwiftMQTT */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SwiftMQTT; sourceTree = "<group>"; };
 		FC069356A4C938CE5A225BA7 /* Pods-jrIoTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jrIoTUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-jrIoTUITests/Pods-jrIoTUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +116,7 @@
 				D4606FFBFEA3F4B14755166F /* Pods_jrIoT.framework */,
 				AC26A39A87E76EAC2392C472 /* Pods_jrIoTTests.framework */,
 				6273B0AF32E74DBBE4BDAAC2 /* Pods_jrIoTUITests.framework */,
+				E1F239BF1FED6D0300A5C87C /* SwiftMQTT */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				E1A5A6E41FEC3B7000C67798 /* LaunchScreen.storyboard in Resources */,
 				E1A5A6E11FEC3B7000C67798 /* Assets.xcassets in Resources */,
 				E1246E731FED5BD9008463ED /* Podfile in Resources */,
+				E1F239C01FED6D0300A5C87C /* SwiftMQTT in Resources */,
 				E1A5A6DC1FEC3B7000C67798 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
