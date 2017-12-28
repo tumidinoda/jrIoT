@@ -19,15 +19,31 @@ class IoTitem: MQTTSessionDelegate {
         self.mqtt_host=host
         self.topic=topic
         mqttSession = MQTTSession(host: self.mqtt_host, port: port, clientID: "swift", cleanSession: true, keepAlive: 15, useSSL: false)
+        mqttSession.delegate = self
         self.reconnect()
     }
     //-----------------------------------------------------------------------------------
     func reconnect(){
         if !self.alive {
-            self.mqttSession.connect { (succeeded, error) -> Void in
-                if succeeded {self.alive=true} else {self.alive=false}
+            mqttSession.connect {
+                if !$0 {
+                    print("Error Occurred During connection \($1)")
+                    return
+                }
+                print("Connected.")
+                self.alive=true
             }
+            
+            
+  /*          self.mqttSession.connect { (succeeded, error) -> Void in
+                if succeeded
+                    {self.alive=true}
+                else
+                    {self.alive=false}
+            }
+*/
         }
+
     }
 
     //-----------------------------------------------------------------------------------
@@ -36,6 +52,7 @@ class IoTitem: MQTTSessionDelegate {
     }
     //-----------------------------------------------------------------------------------
     func mqttDidDisconnect(session: MQTTSession) {
+        self.alive=false
         print("DidDisconnect")
     }
     

@@ -19,7 +19,7 @@ class IoTitemTest: XCTestCase {
     }
     //-----------------------------------------------------------------------------------
     func testSearchForLocalMqttBroker(){
-        for i in 1...255 {
+        for i in 14...15 {
             let myHost="10.0.0."+String(i)
             let myIoTitem = IoTitem(host: myHost,topic: "swiftTest/LWT")
             if (myIoTitem.alive) {
