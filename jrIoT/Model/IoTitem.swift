@@ -9,19 +9,46 @@
 import Foundation
 import SwiftMQTT
 
-class IoTitem {
-    let ip: String
-    init (ip: String) {
-        self.ip=ip
-        
-    let mqttSession = MQTTSession(host: "10.0.0.14", port: 1883, clientID: "swift", cleanSession: true, keepAlive: 15, useSSL: false)
-        
-    mqttSession.connect { (succeeded, error) -> Void in
-            if succeeded {
-                print("Connected!")
+class IoTitem: MQTTSessionDelegate {
+    let mqtt_host: String
+    let topic: String
+    let mqttSession: MQTTSession!
+    public var alive = false
+    //-----------------------------------------------------------------------------------
+    init(host: String,port: UInt16=1883,topic: String) {
+        self.mqtt_host=host
+        self.topic=topic
+        mqttSession = MQTTSession(host: self.mqtt_host, port: port, clientID: "swift", cleanSession: true, keepAlive: 15, useSSL: false)
+        self.reconnect()
+    }
+    //-----------------------------------------------------------------------------------
+    func reconnect(){
+        if !self.alive {
+            self.mqttSession.connect { (succeeded, error) -> Void in
+                if succeeded {self.alive=true} else {self.alive=false}
             }
         }
     }
+
+    //-----------------------------------------------------------------------------------
+    func mqttDidReceive(message data: Data, in topic: String, from session: MQTTSession) {
+        print("Did receive message")
+    }
+    //-----------------------------------------------------------------------------------
+    func mqttDidDisconnect(session: MQTTSession) {
+        print("DidDisconnect")
+    }
+    
+    //-----------------------------------------------------------------------------------
+    func mqttSocketErrorOccurred(session: MQTTSession) {
+        print("SocketError")
+    }
+    
+
+    
+    
+
+    
 }
 
 

@@ -11,16 +11,28 @@ import XCTest
 @testable import SwiftMQTT
 
 class IoTitemTest: XCTestCase {
+    let mqttBrokerHost = "10.0.0.14"
     //-----------------------------------------------------------------------------------
     func testIoTitem() {
-    
-        _ = IoTitem(ip: "10.0.0.25")
-        
-
-        
+     //     let myIoTitem = IoTitem(host: mqttBrokerHost)
+     //     print (myIoTitem.connect())
     }
     //-----------------------------------------------------------------------------------
- 
+    func testSearchForLocalMqttBroker(){
+        for i in 1...255 {
+            let myHost="10.0.0."+String(i)
+            let myIoTitem = IoTitem(host: myHost,topic: "swiftTest/LWT")
+            if (myIoTitem.alive) {
+                print("Broker: \(myIoTitem.mqtt_host) found")
+            }
+            else {
+                print("Broker: \(myIoTitem.mqtt_host) not found")
+            }
+        }
+        
+    }
+
+    /*-----------------------------------------------------------------------------------
     
     override func setUp() {
         super.setUp()
@@ -43,5 +55,5 @@ class IoTitemTest: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
+    //-----------------------------------------------------------------------------------*/
 }
