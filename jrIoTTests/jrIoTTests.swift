@@ -9,16 +9,21 @@
 import XCTest
 @testable import jrIoT
 
+
 class jrIoTTests: XCTestCase {
+    var myIoTitem: jrIoTitem!
     
     func testSetupIoTitem() {
-        let myMqttHost="10.0.0.15"
-        let myIoTitem = jrIoTitem(host: myMqttHost)
+
+        let myMqttHost="10.0.0.14"
+        let myMqttPort=UInt16(1883)
+        myIoTitem = jrIoTitem(host: myMqttHost,port: myMqttPort)
+        
         XCTAssertEqual(myIoTitem.mqttBrokerHost, myMqttHost)
-        
-        
+        XCTAssertEqual(myIoTitem.mqttBrokerPort, myMqttPort)
+        XCTAssertTrue(myIoTitem.alive)
     }
-    
+/*
     //----------------------------------------------------------------------------------------------------
     override func setUp() {
         super.setUp()
@@ -41,5 +46,6 @@ class jrIoTTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+*/
     
 }

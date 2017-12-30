@@ -11,13 +11,29 @@ import Foundation
 import SwiftMQTT
 
 class jrIoTitem: MQTTSessionDelegate {
-    let mqttBrokerHost: String
-    let mqttBrokerPort: UInt16
-    var alive = false
+    let mqttBrokerHost: String!
+    let mqttBrokerPort: UInt16!
+    let mqttSession: MQTTSession!
+    var alive = true
     //----------------------------------------------------------------------------------------------------
     init(host: String,port: UInt16 = 1883) {
         mqttBrokerHost=host
         mqttBrokerPort=port
+        
+        mqttSession = MQTTSession(host: mqttBrokerHost, port: mqttBrokerPort, clientID: "jrIoTitem", cleanSession: true, keepAlive: 15)
+        mqttSession.delegate = self
+        
+        self.reconnect()
+        
+    }
+    
+    //----------------------------------------------------------------------------------------------------
+    func reconnect() {
+        mqttSession.connect{
+            self.alive=$0
+            print(self.mqttBrokerHost+": "+String(describing: $1))
+        }
+
         
     }
     
@@ -28,6 +44,7 @@ class jrIoTitem: MQTTSessionDelegate {
     
     //----------------------------------------------------------------------------------------------------
     func mqttDidDisconnect(session: MQTTSession) {
+        self.alive=false
         print("Mqtt connection disconnected")
     }
     
