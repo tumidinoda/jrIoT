@@ -11,6 +11,15 @@ import XCTest
 
 class jrIoTTests: XCTestCase {
     
+    func testSetupIoTitem() {
+        let myMqttHost="10.0.0.15"
+        let myIoTitem = jrIoTitem(host: myMqttHost)
+        XCTAssertEqual(myIoTitem.mqttBrokerHost, myMqttHost)
+        
+        
+    }
+    
+    //----------------------------------------------------------------------------------------------------
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
