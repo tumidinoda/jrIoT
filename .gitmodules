@@ -1,0 +1,3 @@
+[submodule "jrIoT/Model/SwiftMQTT"]
+	path = jrIoT/Model/SwiftMQTT
+	url = https://github.com/f2m2rd/SwiftMQTT.git
