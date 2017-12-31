@@ -5,16 +5,17 @@
 //  Created by Robert Jonas on 30.12.17.
 //  Copyright © 2017 jr-soft. All rights reserved.
 //
-
 import Foundation
-
 import SwiftMQTT
 
-class jrIoTitem: MQTTSessionDelegate {
-    let mqttBrokerHost: String!
-    let mqttBrokerPort: UInt16!
+public typealias JrIoTcallback = (_ succeeded: Bool, _ error: Error) -> Void
+
+class JrIoTitem: MQTTSessionDelegate {
+
+    let mqttBrokerHost: String
+    let mqttBrokerPort: UInt16
     let mqttSession: MQTTSession!
-    var alive = true
+    var alive = false
     //----------------------------------------------------------------------------------------------------
     init(host: String,port: UInt16 = 1883) {
         mqttBrokerHost=host
@@ -23,18 +24,16 @@ class jrIoTitem: MQTTSessionDelegate {
         mqttSession = MQTTSession(host: mqttBrokerHost, port: mqttBrokerPort, clientID: "jrIoTitem", cleanSession: true, keepAlive: 15)
         mqttSession.delegate = self
         
-        self.reconnect()
-        
     }
     
     //----------------------------------------------------------------------------------------------------
-    func reconnect() {
-        mqttSession.connect{
+    func reconnect(callback: @escaping JrIoTcallback) {
+        // mqttSession.disconnect()
+        mqttSession.connect {
             self.alive=$0
-            print(self.mqttBrokerHost+": "+String(describing: $1))
+            print("MqttBroker \(self.mqttBrokerHost):\(self.mqttBrokerPort): \($1)")
+            callback($0,$1)
         }
-
-        
     }
     
     //----------------------------------------------------------------------------------------------------

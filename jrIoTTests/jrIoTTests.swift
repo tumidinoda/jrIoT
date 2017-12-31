@@ -11,17 +11,32 @@ import XCTest
 
 
 class jrIoTTests: XCTestCase {
-    var myIoTitem: jrIoTitem!
+    var myIoTitem: JrIoTitem!
     
     func testSetupIoTitem() {
 
-        let myMqttHost="10.0.0.14"
+        let myMqttHost="10.0.0.15"
         let myMqttPort=UInt16(1883)
-        myIoTitem = jrIoTitem(host: myMqttHost,port: myMqttPort)
+        let expectation = self.expectation(description: "Connection Establishment")
+        myIoTitem = JrIoTitem(host: myMqttHost,port: myMqttPort)
         
-        XCTAssertEqual(myIoTitem.mqttBrokerHost, myMqttHost)
-        XCTAssertEqual(myIoTitem.mqttBrokerPort, myMqttPort)
-        XCTAssertTrue(myIoTitem.alive)
+        //let connectionCallback: (Bool,Error)->() = {_,_ in expectation.fulfill()}
+        let connectionCallback: JrIoTcallback = {_,_ in expectation.fulfill()}
+        
+        myIoTitem.reconnect(callback: connectionCallback)
+        
+
+        
+        waitForExpectations(timeout: 5) { error in
+            if let error = error {
+                print("Error:", error.localizedDescription)
+            }
+            XCTAssertEqual(self.myIoTitem.mqttBrokerHost, myMqttHost)
+            XCTAssertEqual(self.myIoTitem.mqttBrokerPort, myMqttPort)
+            XCTAssertTrue(self.myIoTitem.alive)
+        }
+        
+        
     }
 /*
     //----------------------------------------------------------------------------------------------------

@@ -15,7 +15,7 @@
 		E1C0677C1FF8053400A51B0E /* jrIoTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C0677B1FF8053400A51B0E /* jrIoTTests.swift */; };
 		E1C067881FF8080E00A51B0E /* jrIoTitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C067871FF8080E00A51B0E /* jrIoTitem.swift */; };
 		E1C067891FF8080E00A51B0E /* jrIoTitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C067871FF8080E00A51B0E /* jrIoTitem.swift */; };
-		E1C067981FF80C9000A51B0E /* SwiftMQTT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C067941FF80C1F00A51B0E /* SwiftMQTT.framework */; };
+		E1C067981FF80C9000A51B0E /* SwiftMQTT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C067941FF80C1F00A51B0E /* SwiftMQTT.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
