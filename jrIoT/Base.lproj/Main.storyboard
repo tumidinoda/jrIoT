@@ -22,7 +22,10 @@
                                 <rect key="frame" x="10" y="30" width="355" height="30"/>
                                 <color key="backgroundColor" red="0.92601364630750993" green="1" blue="0.00019225223670882308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Push the Button"/>
+                                <connections>
+                                    <action selector="pushedMyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lrj-Ma-2pv"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uUW-lH-rRi">
                                 <rect key="frame" x="10" y="70" width="355" height="587"/>
