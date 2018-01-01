@@ -13,9 +13,10 @@
 		E1C0676E1FF8053400A51B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C0676D1FF8053400A51B0E /* Assets.xcassets */; };
 		E1C067711FF8053400A51B0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C0676F1FF8053400A51B0E /* LaunchScreen.storyboard */; };
 		E1C0677C1FF8053400A51B0E /* jrIoTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C0677B1FF8053400A51B0E /* jrIoTTests.swift */; };
-		E1C067881FF8080E00A51B0E /* jrIoTitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C067871FF8080E00A51B0E /* jrIoTitem.swift */; };
-		E1C067891FF8080E00A51B0E /* jrIoTitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C067871FF8080E00A51B0E /* jrIoTitem.swift */; };
-		E1C067981FF80C9000A51B0E /* SwiftMQTT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C067941FF80C1F00A51B0E /* SwiftMQTT.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		E1C067881FF8080E00A51B0E /* JrIoTitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C067871FF8080E00A51B0E /* JrIoTitem.swift */; };
+		E1C067891FF8080E00A51B0E /* JrIoTitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C067871FF8080E00A51B0E /* JrIoTitem.swift */; };
+		E1CE0A871FFADD6F00AACB45 /* SwiftMQTT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CE0A831FFADCBB00AACB45 /* SwiftMQTT.framework */; };
+		E1CE0A881FFADD6F00AACB45 /* SwiftMQTT.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1CE0A831FFADCBB00AACB45 /* SwiftMQTT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,21 +27,42 @@
 			remoteGlobalIDString = E1C067621FF8053400A51B0E;
 			remoteInfo = jrIoT;
 		};
-		E1C067931FF80C1F00A51B0E /* PBXContainerItemProxy */ = {
+		E1CE0A821FFADCBB00AACB45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E1C0678E1FF80C1F00A51B0E /* SwiftMQTT.xcodeproj */;
+			containerPortal = E1CE0A7D1FFADCBA00AACB45 /* SwiftMQTT.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 5471A8961BF228900079610F;
 			remoteInfo = SwiftMQTT;
 		};
-		E1C067951FF80C1F00A51B0E /* PBXContainerItemProxy */ = {
+		E1CE0A841FFADCBB00AACB45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E1C0678E1FF80C1F00A51B0E /* SwiftMQTT.xcodeproj */;
+			containerPortal = E1CE0A7D1FFADCBA00AACB45 /* SwiftMQTT.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 5471A8A01BF228900079610F;
 			remoteInfo = SwiftMQTTTests;
 		};
+		E1CE0A891FFADD6F00AACB45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1CE0A7D1FFADCBA00AACB45 /* SwiftMQTT.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5471A8951BF228900079610F;
+			remoteInfo = SwiftMQTT;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1CE0A8B1FFADD6F00AACB45 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E1CE0A881FFADD6F00AACB45 /* SwiftMQTT.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E1C067631FF8053400A51B0E /* jrIoT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jrIoT.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,8 +75,8 @@
 		E1C067771FF8053400A51B0E /* jrIoTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jrIoTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C0677B1FF8053400A51B0E /* jrIoTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jrIoTTests.swift; sourceTree = "<group>"; };
 		E1C0677D1FF8053400A51B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1C067871FF8080E00A51B0E /* jrIoTitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jrIoTitem.swift; sourceTree = "<group>"; };
-		E1C0678E1FF80C1F00A51B0E /* SwiftMQTT.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftMQTT.xcodeproj; path = jrIoT/Model/SwiftMQTT/SwiftMQTT/SwiftMQTT.xcodeproj; sourceTree = "<group>"; };
+		E1C067871FF8080E00A51B0E /* JrIoTitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JrIoTitem.swift; sourceTree = "<group>"; };
+		E1CE0A7D1FFADCBA00AACB45 /* SwiftMQTT.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftMQTT.xcodeproj; path = jrIoT/Model/SwiftMQTT/SwiftMQTT/SwiftMQTT.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1C067981FF80C9000A51B0E /* SwiftMQTT.framework in Frameworks */,
+				E1CE0A871FFADD6F00AACB45 /* SwiftMQTT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +104,6 @@
 				E1C067651FF8053400A51B0E /* jrIoT */,
 				E1C0677A1FF8053400A51B0E /* jrIoTTests */,
 				E1C067641FF8053400A51B0E /* Products */,
-				E1C0678E1FF80C1F00A51B0E /* SwiftMQTT.xcodeproj */,
 				E1C067971FF80C9000A51B0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -122,25 +143,26 @@
 		E1C067861FF807A200A51B0E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E1C067871FF8080E00A51B0E /* jrIoTitem.swift */,
+				E1C067871FF8080E00A51B0E /* JrIoTitem.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		E1C0678F1FF80C1F00A51B0E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E1C067941FF80C1F00A51B0E /* SwiftMQTT.framework */,
-				E1C067961FF80C1F00A51B0E /* SwiftMQTTTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		E1C067971FF80C9000A51B0E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E1CE0A7D1FFADCBA00AACB45 /* SwiftMQTT.xcodeproj */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1CE0A7E1FFADCBA00AACB45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1CE0A831FFADCBB00AACB45 /* SwiftMQTT.framework */,
+				E1CE0A851FFADCBB00AACB45 /* SwiftMQTTTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,10 +175,12 @@
 				E1C0675F1FF8053400A51B0E /* Sources */,
 				E1C067601FF8053400A51B0E /* Frameworks */,
 				E1C067611FF8053400A51B0E /* Resources */,
+				E1CE0A8B1FFADD6F00AACB45 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E1CE0A8A1FFADD6F00AACB45 /* PBXTargetDependency */,
 			);
 			name = jrIoT;
 			productName = jrIoT;
@@ -215,8 +239,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = E1C0678F1FF80C1F00A51B0E /* Products */;
-					ProjectRef = E1C0678E1FF80C1F00A51B0E /* SwiftMQTT.xcodeproj */;
+					ProductGroup = E1CE0A7E1FFADCBA00AACB45 /* Products */;
+					ProjectRef = E1CE0A7D1FFADCBA00AACB45 /* SwiftMQTT.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -228,18 +252,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		E1C067941FF80C1F00A51B0E /* SwiftMQTT.framework */ = {
+		E1CE0A831FFADCBB00AACB45 /* SwiftMQTT.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SwiftMQTT.framework;
-			remoteRef = E1C067931FF80C1F00A51B0E /* PBXContainerItemProxy */;
+			remoteRef = E1CE0A821FFADCBB00AACB45 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E1C067961FF80C1F00A51B0E /* SwiftMQTTTests.xctest */ = {
+		E1CE0A851FFADCBB00AACB45 /* SwiftMQTTTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = SwiftMQTTTests.xctest;
-			remoteRef = E1C067951FF80C1F00A51B0E /* PBXContainerItemProxy */;
+			remoteRef = E1CE0A841FFADCBB00AACB45 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -270,7 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1C067691FF8053400A51B0E /* ViewController.swift in Sources */,
-				E1C067881FF8080E00A51B0E /* jrIoTitem.swift in Sources */,
+				E1C067881FF8080E00A51B0E /* JrIoTitem.swift in Sources */,
 				E1C067671FF8053400A51B0E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1C0677C1FF8053400A51B0E /* jrIoTTests.swift in Sources */,
-				E1C067891FF8080E00A51B0E /* jrIoTitem.swift in Sources */,
+				E1C067891FF8080E00A51B0E /* JrIoTitem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +315,11 @@
 			isa = PBXTargetDependency;
 			target = E1C067621FF8053400A51B0E /* jrIoT */;
 			targetProxy = E1C067781FF8053400A51B0E /* PBXContainerItemProxy */;
+		};
+		E1CE0A8A1FFADD6F00AACB45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftMQTT;
+			targetProxy = E1CE0A891FFADD6F00AACB45 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -424,10 +453,12 @@
 		E1C067811FF8053400A51B0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MXEMDN7USP;
 				INFOPLIST_FILE = jrIoT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = at.jr1.jrIoT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,10 +470,12 @@
 		E1C067821FF8053400A51B0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MXEMDN7USP;
 				INFOPLIST_FILE = jrIoT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = at.jr1.jrIoT;
 				PRODUCT_NAME = "$(TARGET_NAME)";

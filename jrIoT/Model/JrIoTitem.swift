@@ -27,12 +27,12 @@ class JrIoTitem: MQTTSessionDelegate {
     }
     
     //----------------------------------------------------------------------------------------------------
-    func reconnect(callback: @escaping JrIoTcallback) {
+    func reconnect(_ callback: JrIoTcallback? = nil) {
         // mqttSession.disconnect()
         mqttSession.connect {
             self.alive=$0
             print("MqttBroker \(self.mqttBrokerHost):\(self.mqttBrokerPort): \($1)")
-            callback($0,$1)
+            if (callback != nil) {callback!($0,$1)}
         }
     }
     
