@@ -11,13 +11,16 @@ import SwiftMQTT
 public typealias JrIoTcallback = (_ succeeded: Bool, _ error: Error) -> Void
 
 class JrIoTitem: MQTTSessionDelegate {
-
+    static var counter=0
+    let myId: Int
     let mqttBrokerHost: String
     let mqttBrokerPort: UInt16
     let mqttSession: MQTTSession!
     var alive = false
     //----------------------------------------------------------------------------------------------------
     init(host: String,port: UInt16 = 1883) {
+        JrIoTitem.counter+=1
+        myId=JrIoTitem.counter
         mqttBrokerHost=host
         mqttBrokerPort=port
         
@@ -28,12 +31,17 @@ class JrIoTitem: MQTTSessionDelegate {
     
     //----------------------------------------------------------------------------------------------------
     func reconnect(_ callback: JrIoTcallback? = nil) {
-        // mqttSession.disconnect()
+        mqttSession.disconnect()
         mqttSession.connect {
             self.alive=$0
-            print("MqttBroker \(self.mqttBrokerHost):\(self.mqttBrokerPort): \($1)")
+            print("MqttBroker\(self.myId) \(self.mqttBrokerHost):\(self.mqttBrokerPort): \($1)")
             if (callback != nil) {callback!($0,$1)}
         }
+    }
+    
+    //----------------------------------------------------------------------------------------------------
+    func disconnect() {
+        mqttSession.disconnect()
     }
     
     //----------------------------------------------------------------------------------------------------
@@ -44,7 +52,7 @@ class JrIoTitem: MQTTSessionDelegate {
     //----------------------------------------------------------------------------------------------------
     func mqttDidDisconnect(session: MQTTSession) {
         self.alive=false
-        print("Mqtt connection disconnected")
+        print("MqttBroker\(myId) \(self.mqttBrokerHost):\(self.mqttBrokerPort): disconnected")
     }
     
     //----------------------------------------------------------------------------------------------------
