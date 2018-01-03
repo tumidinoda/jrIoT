@@ -12,48 +12,62 @@ import XCTest
 
 class jrIoTTests: XCTestCase {
     var myIoTitem: JrIoTitem!
+    var myExpectation: XCTestExpectation!
+    var myConnCallback: JrIoTcallback!
+    let myMqttHost="10.0.0.14"   //raspi3
+    let myMqttPort=UInt16(1883)
     
-    func testSetupIoTitem() {
+    //----------------------------------------------------------------------------------------------------
+    override func setUp() {
+        super.setUp()
 
+        myConnCallback = {_,_ in self.myExpectation.fulfill()}
+        myIoTitem = JrIoTitem(host: myMqttHost,port: myMqttPort)
+    }
+    
+    //----------------------------------------------------------------------------------------------------
+    func testNonExistingHost() {
         let myMqttHost="10.0.0.15"
         let myMqttPort=UInt16(1883)
-        let expectation = self.expectation(description: "Connection Establishment")
+        
+        myExpectation = self.expectation(description: "Connection Failure")
         myIoTitem = JrIoTitem(host: myMqttHost,port: myMqttPort)
         
-        //let connectionCallback: (Bool,Error)->() = {_,_ in expectation.fulfill()}
-        let connectionCallback: JrIoTcallback = {_,_ in expectation.fulfill()}
-        
-        myIoTitem.reconnect(callback: connectionCallback)
-        
-
+        myIoTitem.reconnect(myConnCallback)
         
         waitForExpectations(timeout: 5) { error in
             if let error = error {
                 print("Error:", error.localizedDescription)
             }
-            XCTAssertEqual(self.myIoTitem.mqttBrokerHost, myMqttHost)
-            XCTAssertEqual(self.myIoTitem.mqttBrokerPort, myMqttPort)
+            XCTAssertFalse(self.myIoTitem.alive)
+        }
+    }
+    
+    //----------------------------------------------------------------------------------------------------
+    func testExistingHost() {
+        myExpectation = self.expectation(description: "Connection Success")
+        
+        myIoTitem.reconnect(myConnCallback)
+        
+        waitForExpectations(timeout: 5) { error in
+            if let error = error {
+                print("Error:", error.localizedDescription)
+            }
+            XCTAssertEqual(self.myIoTitem.mqttBrokerHost, self.myMqttHost)
+            XCTAssertEqual(self.myIoTitem.mqttBrokerPort, self.myMqttPort)
             XCTAssertTrue(self.myIoTitem.alive)
         }
-        
-        
+
     }
 /*
     //----------------------------------------------------------------------------------------------------
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
