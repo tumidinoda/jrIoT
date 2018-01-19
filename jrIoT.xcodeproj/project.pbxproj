@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1646FF22012603C00E3E0D1 /* jrIoTitemsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1646FF12012603C00E3E0D1 /* jrIoTitemsManagerTests.swift */; };
+		E1646FF5201263BA00E3E0D1 /* JrIoTitemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1646FF4201263BA00E3E0D1 /* JrIoTitemManager.swift */; };
 		E1C067671FF8053400A51B0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C067661FF8053400A51B0E /* AppDelegate.swift */; };
 		E1C067691FF8053400A51B0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C067681FF8053400A51B0E /* ViewController.swift */; };
 		E1C0676C1FF8053400A51B0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C0676A1FF8053400A51B0E /* Main.storyboard */; };
@@ -65,6 +67,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E1646FF12012603C00E3E0D1 /* jrIoTitemsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jrIoTitemsManagerTests.swift; sourceTree = "<group>"; };
+		E1646FF4201263BA00E3E0D1 /* JrIoTitemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JrIoTitemManager.swift; sourceTree = "<group>"; };
 		E1C067631FF8053400A51B0E /* jrIoT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jrIoT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C067661FF8053400A51B0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1C067681FF8053400A51B0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 		E1C0677A1FF8053400A51B0E /* jrIoTTests */ = {
 			isa = PBXGroup;
 			children = (
+				E1646FF12012603C00E3E0D1 /* jrIoTitemsManagerTests.swift */,
 				E1C0677B1FF8053400A51B0E /* jrIoTTests.swift */,
 				E1C0677D1FF8053400A51B0E /* Info.plist */,
 			);
@@ -144,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				E1C067871FF8080E00A51B0E /* JrIoTitem.swift */,
+				E1646FF4201263BA00E3E0D1 /* JrIoTitemManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -296,6 +302,7 @@
 				E1C067691FF8053400A51B0E /* ViewController.swift in Sources */,
 				E1C067881FF8080E00A51B0E /* JrIoTitem.swift in Sources */,
 				E1C067671FF8053400A51B0E /* AppDelegate.swift in Sources */,
+				E1646FF5201263BA00E3E0D1 /* JrIoTitemManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +312,7 @@
 			files = (
 				E1C0677C1FF8053400A51B0E /* jrIoTTests.swift in Sources */,
 				E1C067891FF8080E00A51B0E /* JrIoTitem.swift in Sources */,
+				E1646FF22012603C00E3E0D1 /* jrIoTitemsManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

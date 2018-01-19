@@ -38,6 +38,11 @@
                BlueprintName = "jrIoTTests"
                ReferencedContainer = "container:jrIoT.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "jrIoTTests/testSelfdrivenReconnect()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
