@@ -41,6 +41,9 @@
             </BuildableReference>
             <SkippedTests>
                <Test
+                  Identifier = "jrIoTTests">
+               </Test>
+               <Test
                   Identifier = "jrIoTTests/testSelfdrivenReconnect()">
                </Test>
             </SkippedTests>
