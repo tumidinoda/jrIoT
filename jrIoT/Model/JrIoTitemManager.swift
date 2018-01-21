@@ -8,17 +8,45 @@
 
 import Foundation
 
-// Singleton class JrIoTManager
+/*
+// Singleton class JrIoTitemManager
 class JrIoTitemManager {
-    private var itemList = [String: JrIoTitem]()
+    //private var itemList = [String: JrIoTitem]()
+    /*
     private static let sharedInstance = JrIoTitemManager()
     class var sharedManager : JrIoTitemManager {
         return sharedInstance
-    }
+    } */
     //----------------------------------------------------------------------------------------------------
-    func add(item: JrIoTitem) {
-        self.itemList[item.mqttBrokerHost] = item
+   func add (iotItem: JrIoTitem) {
+     // self.itemList[iotItem.mqttBrokerHost] = iotItem
+   }
+    
+}
+*/
+
+class JrIoTitemManager {
+ 
+    func add (iotItem: JrIoTitem) {
+        print ("IoTitem added \(iotItem)")
+        
     }
+    func add (item: String) {
+        print ("IoTitem added \(item)")
+    }
+    
 }
 
-
+/*
+class anotherTest {
+    init() {
+        let test=myTestClass()
+        let myIoTitem = JrIoTitem(host: "10.0.0.14")
+        
+        test.add(iotItem: myIoTitem)
+    }
+    
+    
+    
+}
+*/

@@ -8,8 +8,10 @@
 
 import XCTest
 @testable import jrIoT
+//import jrIoT
 
-class jrIoTitemsManagerTests: XCTestCase {
+
+class jrIoTitemManagerTests: XCTestCase {
 
     
     //----------------------------------------------------------------------------------------------------
@@ -25,14 +27,28 @@ class jrIoTitemsManagerTests: XCTestCase {
     
     //----------------------------------------------------------------------------------------------------
     func testAddIoTitem() {
-        let myMqttBroker="10.0.0.14"
-        let myIoTitemManager=JrIoTitemManager()
+
         
-        let myIoTitem = JrIoTitem(host: myMqttBroker)
-        myIoTitemManager.add(item: myIoTitem)
+        let test=JrIoTitemManager()
+        var myIoTitem: JrIoTitem
+        myIoTitem = JrIoTitem(host: "10.0.0.14")
+        
+        test.add(iotItem: myIoTitem)
+        test.add(item: "Hallo")
+        
+  
+        
+        
+        
+        
+        
+        //myIoTitemManager.add(iotItem: myIoTitem)
+        
+        //myIoTitemManager.add(iotItem: myIoTitem)
+        //myIoTitemManager.add(iotItem: 5)
     }
     
-
-
+    
+    
     
 }
